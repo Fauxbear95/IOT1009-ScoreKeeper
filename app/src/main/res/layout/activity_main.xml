@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Team2Score"
+        android:layout_width="68dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="59dp"
+        android:gravity="center"
+        android:text="@string/team_2_score"
+        android:textSize="25pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team2name" />
+
+    <TextView
+        android:id="@+id/team1name"
+        android:layout_width="185dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/team_1"
+        android:textColor="#4C0099"
+        android:textScaleX="1.2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <TextView
+        android:id="@+id/textViewVS"
+        android:layout_width="42dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/VS"
+        android:textColor="#00990F"
+        android:textScaleX="1.2"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="184dp"
+        tools:layout_editor_absoluteY="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:layout_constraintLeft_toRightOf="@+id/team1name"/>
+
+    <TextView
+        android:id="@+id/team2name"
+        android:layout_width="185dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/team_2"
+        android:textColor="#FF0000"
+        android:textScaleX="1.2"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/Team1Score"
+        android:layout_width="68dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="@string/team_1_score"
+        android:textSize="25pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team1name" />
+
+    <Switch
+        android:id="@+id/scoreSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/team_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Team2Score"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/Team1Score"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVS"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        app:layout_constraintBottom_toTopOf="@+id/removebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreSwitch"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <Button
+        android:id="@+id/removebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remove"
+        app:layout_constraintBottom_toTopOf="@+id/scoreChoiceRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreSwitch"
+        app:layout_constraintVertical_bias="0.828" />
+
+    <RadioGroup
+        android:id="@+id/scoreChoiceRadioGroup"
+        android:layout_width="105dp"
+        android:layout_height="149dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreSwitch"
+        app:layout_constraintVertical_bias="0.732">
+
+        <RadioButton
+            android:id="@+id/_1pointOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_point" />
+
+        <RadioButton
+            android:id="@+id/_2pointOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2_points" />
+
+        <RadioButton
+            android:id="@+id/_3pointOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_points" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
