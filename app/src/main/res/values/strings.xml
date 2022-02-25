@@ -7,6 +7,7 @@
     <string name="team_2_score">0</string>
     <string name="add">Add</string>
     <string name="remove">Remove</string>
+    <string name="reset">Reset</string>
     <string name="_1_point">1 Point</string>
     <string name="_2_points">2 Points</string>
     <string name="_3_points">3 Points</string>

@@ -86,6 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/team_select"
+        android:checked="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Team2Score"
         app:layout_constraintHorizontal_bias="0.486"
@@ -116,6 +117,17 @@
         app:layout_constraintTop_toBottomOf="@+id/scoreSwitch"
         app:layout_constraintVertical_bias="0.828" />
 
+    <Button
+        android:id="@+id/resetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreChoiceRadioGroup" />
+
     <RadioGroup
         android:id="@+id/scoreChoiceRadioGroup"
         android:layout_width="105dp"
@@ -136,6 +148,7 @@
             android:id="@+id/_2pointOption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/_2_points" />
 
         <RadioButton
